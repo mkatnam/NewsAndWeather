@@ -1,0 +1,95 @@
+{
+    "models": {
+        "mobile": {
+            "class": "GraphLinksModel",
+            "linkDataArray": [
+                {
+                    "actionId": "NAVIGATE_TO_FORM___d0c9cc4db6894407a62e1d5f7b1f4e44",
+                    "actionSequenceId": "AS_Button_d2f0985dd6384218bea42dc9dea2f3dc",
+                    "beautifiedPath": "frmNewsAndWeather > btnFloating > onClick",
+                    "evt": "ide_onClick",
+                    "from": "b7e61c0deb3a4169a987b8d1a8590c54",
+                    "isPSP": false,
+                    "points": [
+                        168,
+                        442.1869466145833,
+                        178,
+                        442.1869466145833,
+                        180,
+                        442.1869466145833,
+                        180,
+                        442.1869466145833,
+                        188,
+                        442.1869466145833,
+                        188,
+                        193.25361328125,
+                        444,
+                        193.25361328125,
+                        454,
+                        193.25361328125
+                    ],
+                    "to": "b01986ea256f49db85afbea0b8991e10",
+                    "widgetKUID": "h83ca2d0942d45fd8edf75f72d0f3b18"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM___f68880fbfb62473180e48f617e0ff220",
+                    "actionSequenceId": "AS_UWI_c142c3c0a29d46cca4705a4172b01361",
+                    "beautifiedPath": "frmNewsAndWeather > hamburger > onClickFooterHelp",
+                    "evt": "ide_onClickFooterHelp",
+                    "from": "b7e61c0deb3a4169a987b8d1a8590c54",
+                    "isPSP": false,
+                    "points": [
+                        168,
+                        544.3202799479167,
+                        178,
+                        544.3202799479167,
+                        311,
+                        544.3202799479167,
+                        311,
+                        793.25361328125,
+                        444,
+                        793.25361328125,
+                        454,
+                        793.25361328125
+                    ],
+                    "to": "f93855e1d3b047d085031fae86b2f695",
+                    "widgetKUID": "ab980dd539fd49cc97bf7666c1a2baba"
+                }
+            ],
+            "nodeDataArray": [
+                {
+                    "formKUID": "b01986ea256f49db85afbea0b8991e10",
+                    "formName": "frmFramework",
+                    "isStartupForm": false,
+                    "key": "b01986ea256f49db85afbea0b8991e10",
+                    "loc": "454 40.05361328125",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "b7e61c0deb3a4169a987b8d1a8590c54",
+                    "formName": "frmNewsAndWeather",
+                    "isStartupForm": false,
+                    "key": "b7e61c0deb3a4169a987b8d1a8590c54",
+                    "loc": "8 340.05361328124997",
+                    "thumbnailURL": "/assets/NewsandWeather/forms/mobile/frmNewsAndWeather.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "be31b316dd5546a7bbdf2943d47b76cb",
+                    "formName": "frmNewsDetails",
+                    "isStartupForm": false,
+                    "key": "be31b316dd5546a7bbdf2943d47b76cb",
+                    "loc": "454 1240.05361328125",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "f93855e1d3b047d085031fae86b2f695",
+                    "formName": "frmSplash",
+                    "isStartupForm": true,
+                    "key": "f93855e1d3b047d085031fae86b2f695",
+                    "loc": "454 640.0536132812499",
+                    "thumbnailURL": "/assets/NewsandWeather/forms/mobile/frmSplash.sm/.thumbs/default.jpeg"
+                }
+            ]
+        }
+    }
+}

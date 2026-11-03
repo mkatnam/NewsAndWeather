@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="GetCityForecastByZIP" passwordencrypted="false" security="authorized_app_user" type="soapserviceConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://wsf.cdyne.com/WeatherWS/Weather.asmx"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="soapAction" value="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"/>
+        <config-param api-version="" appid="" name="soap-version" value="1.1"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="" formatvalue="" name="zip" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="94538" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:weat=&quot;http://ws.cdyne.com/WeatherWS/&quot;&gt;&#10;   &lt;soapenv:Header/&gt;&#10;   &lt;soapenv:Body&gt;&#10;      &lt;weat:GetCityForecastByZIP&gt;&#10;         &lt;!--Optional:--&gt;&#10;         &lt;weat:ZIP&gt;$zip&lt;/weat:ZIP&gt;&#10;      &lt;/weat:GetCityForecastByZIP&gt;&#10;   &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:weat=&quot;http://ws.cdyne.com/WeatherWS/&quot;&gt;&#10;   &lt;soapenv:Header/&gt;&#10;   &lt;soapenv:Body&gt;&#10;      &lt;weat:GetCityForecastByZIP&gt;&#10;         &lt;!--Optional:--&gt;&#10;         &lt;weat:ZIP&gt;$zip&lt;/weat:ZIP&gt;&#10;      &lt;/weat:GetCityForecastByZIP&gt;&#10;   &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <dataset defaultvalue="" id="ForecastList" order="" paramOrder="0" parentOrder="0" src="//ForecastResult" testvalue="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="date" order="" paramOrder="0" parentOrder="0" sms-name="" src="Forecast/Date" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="desc" order="" paramOrder="0" parentOrder="0" sms-name="" src="Forecast/Desciption" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="low" order="" paramOrder="0" parentOrder="0" sms-name="" src="Forecast/Temperatures/MorningLow" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="high" order="" paramOrder="0" parentOrder="0" sms-name="" src="Forecast/Temperatures/DaytimeHigh" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="daypct" order="" paramOrder="0" parentOrder="0" sms-name="" src="Forecast/ProbabilityOfPrecipiation/Daytime" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </dataset>
+        <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="nightpct" order="" paramOrder="0" parentOrder="0" sms-name="" src="Forecast/ProbabilityOfPrecipiation/Nighttime" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="opstatus" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="java.lang.String" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="errmsg" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="java.lang.String" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="httpStatusCode" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="java.lang.String" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

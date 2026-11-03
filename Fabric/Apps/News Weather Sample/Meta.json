@@ -1,0 +1,30 @@
+{
+  "icon" : "icon.png",
+  "meta" : "{}",
+  "subType" : "customapp",
+  "description" : "News Weather Sample",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "LocationLookup",
+    "version" : "1.0",
+    "etag" : "8e7141eb-e025-4a24-a19e-c1d50127f4cb"
+  }, {
+    "name" : "News",
+    "version" : "1.0",
+    "etag" : "3e8b6aa3-2030-44bc-aeb2-f8e62852055f"
+  }, {
+    "name" : "Weather",
+    "version" : "1.0",
+    "etag" : "9527a87c-f878-416a-9ae3-5a314868ca39"
+  }, {
+    "name" : "WeatherNew",
+    "version" : "1.0",
+    "etag" : "c2ba58fc-81aa-4887-a463-d9459244e579"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "NewAndWeather",
+    "version" : "1.0",
+    "etag" : "89d43cbe-b70e-44f0-9c10-301ce4e26e95"
+  } ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":true,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}
